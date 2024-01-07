@@ -1,5 +1,8 @@
-type Note @model @auth(rules: [ { allow: public } ] ){
-  id: ID!
-  name: String!
-  description: String
+type Todo @model @auth(rules: [{ allow: public }]) {
+  id: ID
+  text: String
+  complete: Boolean
+  yyyymmdd: String
+  user: String
+  customID: Int
 }
